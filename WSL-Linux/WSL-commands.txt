@@ -1,0 +1,18 @@
+## List Installed Distros Open PowerShell or Command Prompt and run:
+wsl --list --verbose
+
+## Unregister (Uninstall) Ubuntu Find the exact name of your Ubuntu distro (e.g., Ubuntu, Ubuntu-20.04, etc.), then run:
+wsl --unregister <DistroName>
+
+
+Use 'wsl.exe --list --online' to list available distributions
+and 'wsl.exe --install <Distro>' to install.
+
+## To check the usb list:
+usbipd list
+
+## To share it across WSL:
+usbipd bind -b my-BUSID
+
+## To make it accessible in WSL:
+usbipd attach --busid my-BUSID --wsl
